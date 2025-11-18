@@ -649,6 +649,9 @@ type ConfigType struct {
 	GotifyAlert         bool   `json:"gotify_alert,omitempty" env:"SEMAPHORE_GOTIFY_ALERT"`
 	GotifyUrl           string `json:"gotify_url,omitempty" env:"SEMAPHORE_GOTIFY_URL"`
 	GotifyToken         string `json:"gotify_token,omitempty" env:"SEMAPHORE_GOTIFY_TOKEN,sensitive"`
+	PushoverAlert       bool   `json:"pushover_alert,omitempty" env:"SEMAPHORE_PUSHOVER_ALERT"`
+	PushoverUserKey     string `json:"pushover_user_key,omitempty" env:"SEMAPHORE_PUSHOVER_USER_KEY"`
+	PushoverToken       string `json:"pushover_token,omitempty" env:"SEMAPHORE_PUSHOVER_TOKEN,sensitive"`
 
 	// OidcProviders configures OpenID Connect sign-in. The key is the provider ID
 	// that appears in identity records and in the /auth/oidc/<id>/login URL, so it
